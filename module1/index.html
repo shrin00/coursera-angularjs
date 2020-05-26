@@ -8,9 +8,11 @@
     </head>
     <body ng-app="nameCalculator">
         <h1>Name calculator</h1>
-        <div class="" ng-controller="nameCalculatorController">
-            Your Name:<input type="text" ng-model="name" ng-keyup="displaNumeric();"><br>
-            Total Numeric value of person's name is:   {{totalValue}} <br>{{name}}
+        <div class="" ng-controller="DIcontroller">
+            
+            Your Name:<input type="text" ng-model="name" ng-keyup="displaNumeric();", ng-blur="upper();"><br>
+           <!-- Total Numeric value of person's name is:   {{totalValue}} -->
+           
         </div>
     </body>
 </html>

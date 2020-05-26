@@ -3,7 +3,7 @@
     
     angular.module('nameCalculator', [])
     
-    .controller('nameCalculatorController', function($scope){
+    /*.controller('nameCalculatorController', function($scope){
         $scope.name="";
         $scope.totalValue=0;
         
@@ -20,6 +20,17 @@
             }
             return totalStringValue;
         }
-    });
+    });*/
+    
+    .controller('DIcontroller', DIcontroller);
+    
+    function DIcontroller($scope, $filter){
+        $scope.name="Shrinath";
+        
+        $scope.upper=function(){
+            var upCase=$filter('uppercase');
+            $scope.name=upCase($scope.name);
+        };
+    };
     
 })();
