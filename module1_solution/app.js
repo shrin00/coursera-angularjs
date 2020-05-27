@@ -10,10 +10,15 @@
         $scope.stage="";
         $scope.check=function(){
             var arrayLunch=$scope.list.split(', ');
-            if(arrayLunch.length<=3){
-                $scope.stage="Enjoy!";
+            
+            if(arrayLunch==false){
+                $scope.stage="Please Enter data first!";
             }else{
-                $scope.stage="Too much!";
+                if(arrayLunch.length<=3){
+                    $scope.stage="Enjoy!";
+                }else{
+                    $scope.stage="Too much!";
+                }
             }
         };
         
