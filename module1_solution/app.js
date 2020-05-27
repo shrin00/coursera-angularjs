@@ -4,8 +4,8 @@
     angular.module('LunchCheck', [])
     .controller('LunchCheckController', LunchCheckController);
     
-    LunchCheckController.$injector=['$scope', '$filter']
-    function LunchCheckController($scope, $filter){
+    LunchCheckController.$injector=['$scope']
+    function LunchCheckController($scope){
         $scope.list="";
         $scope.stage="";
         $scope.check=function(){
