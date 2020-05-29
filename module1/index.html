@@ -12,7 +12,11 @@
   <h1>Name calculator</h1>
   <div class="" ng-controller="DIcontroller">
 
-    Your Name:<input type="text" ng-model="name" ng-keyup="displaNumeric();" , ng-blur="upper();"><br>
+    {{simple}}:<input type="text" ng-model="name" ng-keyup="displaNumeric();" , ng-blur="upper();"><br>
+    cost :{{cost | currency : "@": 3}}<br>
+    original:{{msg}}<br>
+    second:{{ msg | reps : 'hello': 'hi' }}<br>
+    second:{{ msg | reps : 'hello': 'hi' | uppercase}}
     <!-- Total Numeric value of person's name is:   {{totalValue}} -->
 
   </div>
